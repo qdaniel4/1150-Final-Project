@@ -4,9 +4,9 @@ from PIL import Image, ImageDraw, ImageFont #imported image, draw, and font from
 
 """In this block of code I used the same url to create 3 variables. Each variable will generate 
 a different random taco recipe."""
-taco_recipe_one = requests.get('https://taco-1150.herokuapp.com/random/?full_taco=true').json()
-taco_recipe_two = requests.get('https://taco-1150.herokuapp.com/random/?full_taco=true').json()
-taco_recipe_three = requests.get('https://taco-1150.herokuapp.com/random/?full_taco=true').json()
+taco_recipe_one = requests.get('https://taco-1150.herokuapp.com/random/?full_taco=true').json() #1st random recipe
+taco_recipe_two = requests.get('https://taco-1150.herokuapp.com/random/?full_taco=true').json() #2nd random recipe
+taco_recipe_three = requests.get('https://taco-1150.herokuapp.com/random/?full_taco=true').json() # 3rd random recipe
 
 
 image = Image.open('christine-siracusa-vzX2rgUbQXM-unsplash.jpg') #creates object/ opens image downloaded from unsplash
